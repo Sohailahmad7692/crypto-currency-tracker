@@ -44,7 +44,7 @@ const CoinInfo = ({ coin }) => {
     setHistoricData(data.prices);
   };
 
-  console.log(coin);
+
 
   useEffect(() => {
     fetchHistoricData();
@@ -61,6 +61,7 @@ const CoinInfo = ({ coin }) => {
   });
 
   return (
+    //for testing purpose
     <ThemeProvider theme={darkTheme}>
       <div className={classes.container}>
         {!historicData | flag === false ? (
